@@ -22,6 +22,8 @@ jobs:
         run: npm run lint
       - name: Run Migrations
         run: npm run db:migrate
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
       - name: Deploy to CloudFlare
         uses: cloudflare/wrangler-action@2.0.0
         with:
