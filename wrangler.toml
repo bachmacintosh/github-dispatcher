@@ -1,0 +1,10 @@
+name = "github-dispatcher"
+main = "./src/index.ts"
+node_compat = false
+
+compatibility_date = "2022-12-01"
+
+[[ d1_databases ]]
+binding = "DB"
+database_name = "bachmacintosh"
+database_id = "d6498592-b275-45c8-9929-7e1d9a057674"
