@@ -4,6 +4,9 @@ node_compat = false
 
 compatibility_date = "2022-12-01"
 
+[triggers]
+crons = ["0 */1 * * *"]
+
 [[ d1_databases ]]
 binding = "DB"
 database_name = "bachmacintosh"

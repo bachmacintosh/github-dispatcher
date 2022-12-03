@@ -6,6 +6,7 @@
 		"check-types": "tsc --noEmit",
 		"dev": "wrangler dev",
 		"db:migrate": "wrangler d1 migrations apply bachmacintosh",
+		"db:seed": "wrangler d1 execute bachmacintosh --file ./seeds/example.sql",
 		"lint": "eslint . && prettier --check .",
 		"lint:fix": "eslint --fix . && prettier --write .",
 		"publish": "wrangler publish"
