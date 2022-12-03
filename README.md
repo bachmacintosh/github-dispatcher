@@ -47,23 +47,23 @@ Here's an example:
 
 ```sql
 INSERT INTO github_dispatches (
-	id, owner, repo, ref, workflow_id
+  id, owner, repo, ref, workflow_id
 ) VALUES (
-	1, "bachmacintosh", "new.bachmacintosh.com", "main", 41966281
+  1, "bachmacintosh", "new.bachmacintosh.com", "main", 41966281
 );
 INSERT INTO github_dispatch_schedule (
-	id, run_hour, dispatch_id
+  id, run_hour, dispatch_id
 ) VALUES (
-	1, 0, 1
+  1, 0, 1
 ), (
-	2, 16, 1
+  2, 16, 1
 );
 INSERT INTO github_dispatch_inputs (
-	id, dispatch_id, input_key, input_value
+  id, dispatch_id, input_key, input_value
 ) VALUES (
-	1, 1, "example-key-1", "Example Value 1"
+  1, 1, "example-key-1", "Example Value 1"
 ), (
-	2, 1, "example-key-2", "Example Value 2"
+  2, 1, "example-key-2", "Example Value 2"
 );
 ```
 
