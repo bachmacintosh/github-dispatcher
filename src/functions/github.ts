@@ -12,6 +12,7 @@ export async function dispatchWorkflow(env: Env, parameters: WorkflowDispatchPar
 	const headers = new Headers({
 		Accept: "application/vnd.github+json",
 		Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+		"User-Agent": "GitHub-Dispatcher-by-@bachmacintosh",
 		"X-GitHub-Api-Version": "2022-11-28",
 	});
 	const init: RequestInit<RequestInitCfProperties> = {
